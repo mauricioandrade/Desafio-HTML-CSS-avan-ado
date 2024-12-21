@@ -1,0 +1,180 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    font-size: 1.6rem;
+    background: url(../images/bg-desktop.svg) var(--bg-color) top no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 6rem 8rem 4rem;
+    gap: 7rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+
+.header .logo {
+    width: max-content;
+}
+
+.header .banner {
+    margin-block: auto;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+}
+
+.conteudo .info {
+    width: 100%;
+    max-width: 465px;
+    margin-block: auto;
+}
+
+.conteudo .info h1 {
+    font-size: 4rem;
+    font-weight: 600;
+
+}
+
+.conteudo .info p {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 4rem;
+    line-height: 2.6rem;
+}
+
+.conteudo .btn {
+    cursor: pointer;
+    padding: 1.5rem 6.5rem;
+    border: 0;
+    margin-top: 3rem;
+    border-radius: 2.5rem;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .2);
+    font-size: 1.7rem;
+    color: var(--bg-color);
+    background-color: #ffffff;
+}
+
+.conteudo .btn:hover {
+    color: #ffffff;
+    background-color: var(--second-color);
+}
+
+.conteudo .social {
+    display: flex;
+    align-self: flex-end;
+    gap: 1.5rem;
+
+}
+
+.conteudo .social a {
+    padding: 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    font-size: 2.2rem;
+    line-height: 0;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.conteudo .social a:hover {
+    border-color: var(--second-color);
+    color: var(--second-color);
+}
+
+@media (max-width: 1350px) {
+    body {
+        height: 100%;
+        background-size: contain;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 8rem 8rem 4rem;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header .logo {
+        width: 240px;
+    }
+
+    .header .banner {
+        margin-block: 6rem 0;
+    }
+
+    .conteudo {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .conteudo .info {
+        max-width: 520px;
+    }
+
+    .conteudo .info p {
+        margin-top: 1rem;
+    }
+
+    .conteudo .btn {
+        width: 75%;
+    }
+
+    .conteudo .social {
+        align-self: center;
+        margin-top: 10rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background: url(../images/bg-mobile.svg) var(--bg-color) no-repeat;
+        background-size: contain;
+    }
+
+    .container {
+        min-width: 320px;
+        padding: 4rem 3rem;
+        gap: 5rem
+    }
+
+    .header .logo {
+        width: 160px;
+    }
+
+    .conteudo .info h1 {
+        font-size: 2.8rem;
+        max-width: 350px;
+        margin-inline: auto;
+    }
+
+    .conteudo .info p {
+        width: 95%;
+    }
+
+    .conteudo .social a {
+        font-size: 2rem;
+    }
+
+}
